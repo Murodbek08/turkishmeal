@@ -1,0 +1,151 @@
+@use "../components/buttons" as btns;
+@use "../base/typography" as font;
+@use "../utils/variables" as var;
+@use "../layout/flex" as flx;
+@use "../utils/mixins" as mix;
+
+.our_regular_menu_pack {
+  padding: 0 0 120px 0;
+  .page_menus {
+    margin: 70px 0 70px 0;
+    color: var.$bg-grey;
+    @media (max-width: 803px) {
+      margin: 20px 0 20px 0;
+    }
+    a {
+      @include font.font(20, 400, 19.07, 0);
+      color: var.$bg-grey;
+      &:hover {
+        color: var.$bg-red;
+      }
+    }
+  }
+  .ap-tab-menus-card {
+    display: flex;
+    gap: 36px;
+    justify-content: space-evenly;
+    @media (max-width: 803px) {
+      flex-direction: column;
+    }
+    .ap-tab {
+      border-radius: 20px;
+      width: 428px;
+      height: 844px;
+      background-color: var.$bg-red;
+      @media (max-width: 803px) {
+        width: 100%;
+        height: 60px;
+        background-color: var.$bg-white;
+      }
+      h3 {
+        padding: 50px 0 0 40px;
+        @include font.font(40, 500, 54, 0.03);
+        color: var.$bg-white;
+        @media (max-width: 803px) {
+          display: none;
+        }
+      }
+      ul {
+        @media (max-width: 803px) {
+          display: flex;
+          padding-left: 0;
+          overflow-y: scroll;
+          overflow-y: hidden;
+          scroll-behavior: smooth;
+        }
+        li {
+          .ap-tab_link_1 {
+            width: 82px;
+          }
+          .ap-tab_link_2 {
+            width: 148px;
+          }
+          .ap-tab_link_3 {
+            width: 156px;
+          }
+          .ap-tab_link_4 {
+            width: 213px;
+          }
+          .ap-tab_link_5 {
+            width: 169px;
+          }
+          .ap-tab_link_6 {
+            width: 163px;
+          }
+          .ap-tab_link_7 {
+            width: 211px;
+          }
+          .ap-tab_link_8 {
+            width: 133px;
+          }
+          a {
+            margin: 20px 0 0 0;
+            display: block;
+            @include btns.btn(
+              10px 30px 10px 30px,
+              100,
+              2px solid var.$bg-white
+            );
+            color: var.$bg-white;
+            transition: 0.5s;
+            @media (max-width: 803px) {
+              color: black;
+              @include btns.btn(
+                10px 30px 10px 30px,
+                100,
+                2px solid var.$bg-red
+              );
+              margin: 0;
+            }
+            &:hover {
+              color: var.$bg-red;
+              background-color: var.$bg-white;
+            }
+          }
+        }
+      }
+    }
+    .ap-tab-container {
+      .ap-tab-content {
+        .regular_menu_cards {
+          display: grid;
+          gap: 36px;
+          grid-template-columns: repeat(2, 1fr);
+          @media (max-width: 1320px) {
+            grid-template-columns: repeat(1, 1fr);
+          }
+          .regular_menu_card {
+            margin: 15px auto;
+            max-width: 400px;
+            border-radius: 14px;
+            padding: 20px 20px 40px 20px;
+            border: 1px solid var.$dark-gray;
+            transition: 0.5s;
+            &:hover {
+              box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+                rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            }
+            @media (max-width: 355px) {
+              @include mix.card(10px 10px 30px 10px, 280, 14, 0);
+            }
+            img {
+              width: 100%;
+            }
+            h2 {
+              max-width: 340px;
+              padding: 10px 0 0 0;
+              text-align: center;
+              @include font.font(20, 600, 30, 0);
+            }
+            h4 {
+              padding: 30px 0 0 0;
+              color: var.$bg-red;
+              @include font.font(24, 700, 32.68, 0);
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@use "../components/buttons" as btns;
+@use "../base/typography" as font;
+@use "../utils/variables" as var;
+@use "../layout/flex" as flx;
+@use "../utils/mixins" as mix;
+
+.about_us {
+  h2 {
+    padding: 70px 0 0 0;
+    @include font.font(64, 500, 83.2, 0);
+    text-align: center;
+    @media (max-width: 375px) {
+      @include font.font(44, 500, 63.2, 0);
+    }
+  }
+  .about_us_lupa_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .about_us_eaturkish_img {
+    width: 720px;
+    padding: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    @media (max-width: 765px) {
+      width: 100%;
+    }
+  }
+  P {
+    @include font.font(20, 400, 32, 0);
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    max-width: 720px;
+  }
+}

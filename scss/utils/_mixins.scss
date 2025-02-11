@@ -1,0 +1,14 @@
+@mixin width($width, $height) {
+  max-width: $width + px;
+  height: $height + px;
+}
+@mixin width2($width, $height) {
+  width: $width + px;
+  height: $height + px;
+}
+@mixin card($padding, $width, $radius, $bg-color) {
+  padding: $padding;
+  width: $width + px;
+  border-radius: $radius + px;
+  background-color: $bg-color;
+}

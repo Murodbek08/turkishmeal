@@ -1,0 +1,82 @@
+@use "../components/buttons" as btns;
+@use "../base/typography" as font;
+@use "../utils/variables" as var;
+@use "../layout/flex" as flx;
+@use "../utils/mixins" as mix;
+
+.page_news {
+  .page_news_menus {
+    padding: 70px 0 0 0;
+    a {
+      color: var.$bg-grey;
+      @include font.font(20, 400, 19.07, 0.03);
+      &:hover {
+        color: var.$bg-red;
+      }
+    }
+  }
+  h2 {
+    text-align: center;
+    @include font.font(64, 500, 83.2, 0.03);
+  }
+  img {
+    @include flx.flex(center, 0, 0);
+    margin: 0 auto;
+  }
+  .page_news_cards {
+    padding: 60px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    @media (max-width: 1365px) {
+      justify-items: center;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 895px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .page_news_card {
+      max-width: 410px;
+      border: 2px solid var.$bg-light-gray;
+      border-radius: 14px;
+      img {
+        width: 100%;
+      }
+      h4 {
+        max-width: 362px;
+        padding: 20px 10px 20px 20px;
+        @include font.font(24, 500, 32, 0);
+      }
+      p {
+        max-width: 361px;
+        padding: 0 10px 0 20px;
+        color: var.$bg-grey;
+        @include font.font(14, 400, 24, 0);
+      }
+      .page_news_card_number {
+        padding: 0 20px 0 20px;
+        @include flx.flex(space-between, 0, 0);
+        a {
+          color: var.$bg-red;
+          @include font.font(16, 700, 16, 0.04);
+        }
+        h6 {
+          @include font.font(14, 500, 19.07, 0);
+        }
+      }
+    }
+  }
+  button {
+    @include btns.btn(8px 32px, 100, 3px solid var.$bg-red);
+    display: flex;
+    justify-content: center;
+    margin: 78px auto;
+    @include font.font(16, 700, 28, 0.04);
+    background-color: var.$bg-white;
+    transition: 0.5s;
+    &:hover {
+      background-color: var.$bg-red;
+      color: var.$bg-white;
+    }
+  }
+}

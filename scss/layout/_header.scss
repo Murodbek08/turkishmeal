@@ -1,0 +1,95 @@
+@use "../components/buttons" as btns;
+@use "../base/typography" as font;
+@use "../utils/variables" as var;
+@use "../layout/flex" as flx;
+@use "../utils/mixins" as mix;
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+.hamburger {
+  @include flx.flex(0, 0, 5);
+  flex-direction: column;
+  span {
+    @include mix.width2(30, 4);
+    border-radius: 20px;
+    background-color: var.$bg-white;
+  }
+}
+.navbar-shrink {
+  padding: 15px 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  background-color: var.$bg-red;
+  transition: 0.5s;
+
+  nav {
+    .nav-desktop {
+      @media (max-width: 991px) {
+        display: none;
+      }
+      .navbar-toggler {
+        border: none;
+      }
+      .navbar-toggler:hover {
+        border: none;
+        color: var.$bg-red;
+      }
+      .navbar-nav {
+        @include flx.flex(0, center, 40);
+      }
+      .nav-link {
+        color: var.$bg-white;
+        @include font.font(16, 400, 21.79, 0.04);
+        transition: 0.2s;
+        &:hover {
+          padding-top: 5px;
+          border-bottom: 3px solid;
+        }
+      }
+      .nav_item_btn {
+        @include btns.btn(5px 40px 5px 40px, 50, 2px solid var.$bg-white);
+      }
+    }
+    .nav-media {
+      padding: 12px 0;
+      display: none;
+
+      @media (max-width: 991px) {
+        display: flex;
+      }
+      .nav-link {
+        color: var.$bg-white;
+        @include font.font(16, 400, 21.79, 0.04);
+      }
+      .nav_media_menu {
+        @include flx.flex(space-between, center, 0);
+      }
+      .navbar-nav {
+        @include flx.flex(0, flex-start, 10);
+        padding-left: 20px;
+      }
+      .nav_item_btn {
+        @include btns.btn(5px 40px 5px 40px, 50, 2px solid var.$bg-white);
+      }
+      .offcanvas-start {
+        width: 50%;
+        @media (max-width: 400px) {
+          width: 100%;
+        }
+      }
+      .offcanvas-header {
+        @include flx.flex(space-between, 0, 10);
+        background-color: var.$bg-red;
+      }
+      .offcanvas-title {
+        height: 100%;
+        background-color: var.$bg-red;
+      }
+    }
+  }
+}

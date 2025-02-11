@@ -1,0 +1,5 @@
+@mixin btn($padding, $border_radius, $border) {
+  padding: $padding;
+  border-radius: $border_radius + px;
+  border: $border;
+}

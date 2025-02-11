@@ -1,0 +1,122 @@
+@use "../components/buttons" as btns;
+@use "../base/typography" as font;
+@use "../utils/variables" as var;
+@use "../layout/flex" as flx;
+@use "../utils/mixins" as mix;
+
+footer {
+  .newsletter {
+    border-radius: 14px;
+    background-color: var.$bg-red;
+    transform: translate(0, 200px);
+    box-shadow: 22px 30px 95px 1px var.$bg-dark-gray;
+    h4 {
+      padding: 64px 0 0 0;
+      text-align: center;
+      @include font.font(23, 700, 29.9, 0.04);
+      color: var.$bg-white;
+    }
+    h2 {
+      padding: 25px 0 0 0;
+      text-align: center;
+      @include font.font(48, 500, 62.4, 0.03);
+      color: var.$bg-white;
+      @media (max-width: 460px) {
+        @include font.font(38, 500, 52.4, 0.03);
+      }
+    }
+    p {
+      padding: 24px 0 0 0;
+      text-align: center;
+      @include font.font(16, 400, 28, 0.04);
+      color: var.$bg-white;
+    }
+    form {
+      @include flx.flex(center, 0, 32);
+      padding: 64px 10px 64px 10px;
+      @media (max-width: 570px) {
+        flex-direction: column;
+      }
+      input {
+        @include mix.width(635, 52);
+        @include font.font(16, 500, 28, 0.04);
+        @include btns.btn(0 0 0 18px, 100, 2px solid var.$bg-light-beige);
+        width: 100%;
+        outline: none;
+        background-color: var.$bg-red;
+        color: var.$bg-grey;
+      }
+      button {
+        @include btns.btn(12px 32px 12px 32px, 30, 2px solid var.$bg-white);
+        color: var.$bg-white;
+        background-color: var.$bg-red;
+      }
+    }
+  }
+  .footer_menu {
+    background-color: var.$bg-red;
+    padding: 292px 0 40px 0;
+
+    .footer_menus {
+      @include flx.flex(space-around, center, 0);
+      @media (max-width: 944px) {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+      }
+    }
+    .footer_menu_contact {
+      h3 {
+        text-align: center;
+        @include font.font(32, 400, 41.6, 0.04);
+        color: var.$bg-white;
+      }
+      p {
+        text-align: center;
+        color: var.$bg-white;
+      }
+      .footer_menu_tel {
+        display: flex;
+        flex-direction: column;
+        a {
+          margin: 0 auto;
+          color: var.$bg-white;
+        }
+      }
+    }
+    .footer_menu_logo {
+      transform-style: preserve-3d;
+      @media (max-width: 944px) {
+        margin: 60px 0 0 0;
+      }
+      .footer_logo {
+        @include flx.flex(center, 0, 0);
+      }
+      p {
+        margin: 0 auto;
+        max-width: 420px;
+        text-align: center;
+        color: var.$bg-white;
+      }
+      .footer_icons {
+        @include flx.flex(center, 0, 16);
+      }
+      h6 {
+        padding: 80px 0 0 0;
+        text-align: center;
+        color: var.$bg-white;
+      }
+    }
+    .footer_menu_working_hours {
+      h3 {
+        color: var.$bg-white;
+        text-align: center;
+      }
+      P {
+        margin: 0;
+        text-align: center;
+        color: var.$bg-white;
+      }
+    }
+  }
+}

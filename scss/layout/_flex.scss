@@ -1,0 +1,6 @@
+@mixin flex($jcc, $aic, $gap) {
+  display: flex;
+  justify-content: $jcc;
+  align-items: $aic;
+  gap: $gap + px;
+}

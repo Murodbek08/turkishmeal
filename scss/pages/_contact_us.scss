@@ -1,0 +1,163 @@
+@use "../components/buttons" as btns;
+@use "../base/typography" as font;
+@use "../utils/variables" as var;
+@use "../layout/flex" as flx;
+@use "../utils/mixins" as mix;
+
+.contact_us {
+  .contact_us_menu {
+    padding: 43px 0 0 0;
+    color: var.$bg-grey;
+    a {
+      color: var.$bg-grey;
+      @include font.font(20, 400, 19.07, 0.03);
+      &:hover {
+        color: var.$bg-red;
+      }
+    }
+  }
+  h2 {
+    @include font.font(64, 500, 83.2, 0.03);
+    @include flx.flex(center, 0, 0);
+    @media (max-width: 415px) {
+      @include font.font(44, 500, 63.2, 0.03);
+    }
+  }
+  .contact_us_lupa {
+    @include flx.flex(center, 0, 0);
+    margin: 0 auto;
+  }
+  .contact_us_message_cards {
+    @include flx.flex(0, center, 50);
+    @media (max-width: 930px) {
+      flex-direction: column;
+    }
+    .mesasenger_cards {
+      padding: 20px 0 0 0;
+      .mesasenger_card {
+        margin: 27px 0 0 0;
+        padding: 25px 0 25px 20px;
+        @include mix.width2(420, 110);
+        border-radius: 14px;
+        border: 2px solid var.$bg-light-gray;
+        @include flx.flex(0, 0, 25);
+        transition: 0.5s;
+        @media (max-width: 440px) {
+          @include mix.width2(290, 110);
+        }
+        .mesasenger_card_image {
+          @include mix.width2(60, 60);
+          border-radius: 100px;
+          @include flx.flex(center, center, 0);
+          background-color: var.$bg-light-gray;
+        }
+        h4 {
+          @include font.font(22, 600, 34, 0);
+        }
+        a {
+          color: var.$neutral-gray;
+          opacity: 70%;
+          @include font.font(14, 400, 19.07, 0);
+        }
+        &:hover {
+          transform: scale(1.1);
+          background-color: var.$bg-red;
+          h4 {
+            color: var.$bg-white;
+          }
+          a {
+            color: var.$bg-white;
+          }
+        }
+      }
+    }
+    .send_messege {
+      padding: 40px;
+      border-radius: 14px;
+      margin: 40px 0 0 0;
+      border: 2px solid var.$bg-light-gray;
+      max-width: 790px;
+      @media (max-width: 410px) {
+        padding: 10px;
+      }
+      h3 {
+        @include font.font(38, 600, 34, 0);
+        @media (max-width: 410px) {
+          @include font.font(28, 500, 24, 0);
+        }
+      }
+      P {
+        padding: 16px 0 0 0;
+        opacity: 70%;
+        max-width: 565px;
+      }
+      label {
+        width: 100%;
+        .input {
+          width: 100%;
+          padding: 20px 0 0 0;
+          display: flex;
+          gap: 20px;
+          @media (max-width: 1160px) {
+            flex-direction: column;
+          }
+          input {
+            padding: 0 0 0 20px;
+            border-radius: 12px;
+            border: 2px solid var.$bg-light-gray;
+            @include mix.width(345, 58);
+            width: 100%;
+            outline: none;
+          }
+        }
+        input {
+          margin: 15px 0 0 0;
+          padding: 20px 0 110px 20px;
+          width: 710px;
+          width: 100%;
+          outline: none;
+          border-radius: 12px;
+          border: 2px solid var.$bg-light-gray;
+        }
+        button {
+          @include btns.btn(18px 45px, 100, 2px solid var.$bg-red);
+          margin: 25px 0 0 0;
+          border: none;
+          color: var.$bg-white;
+          background-color: var.$bg-red;
+          @include font.font(20, 400, 29, 0);
+          transition: 0.5s;
+          @media (max-width: 450px) {
+            @include flx.flex(center, center, 0);
+            margin: 25px auto;
+          }
+          &:hover {
+            @include btns.btn(18px 45px, 100, 2px solid var.$bg-red);
+            color: var.$bg-red;
+            background-color: var.$bg-white;
+          }
+        }
+      }
+    }
+  }
+}
+.find_us_by_card {
+  h3 {
+    padding: 110px 0 40px 0;
+    text-align: center;
+    @include font.font(38, 500, 49.4, 0);
+  }
+  iframe {
+    width: 100%;
+    height: 1250px;
+    @media (max-width: 1240px) {
+      height: 900px;
+    }
+    @media (max-width: 800px) {
+      height: 600px;
+    }
+    @media (max-width: 500px) {
+      height: 400px;
+    }
+  }
+}
