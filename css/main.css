@@ -55,11 +55,7 @@ a {
   right: 20px;
   bottom: 20px;
   background: rgb(34, 193, 195);
-  background: linear-gradient(
-    0deg,
-    rgb(34, 193, 195) 0%,
-    rgb(253, 187, 45) 100%
-  );
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
   width: 60px;
   height: 60px;
   border-radius: 10px;
@@ -513,7 +509,7 @@ footer .footer_menu .footer_menu_working_hours P {
   color: rgb(255, 255, 255);
   opacity: 70%;
 }
-.hero_section_kebab button {
+.hero_section_kebab a {
   padding: 8px 32px;
   border-radius: 100px;
   border: 2px solid rgb(255, 255, 255);
@@ -522,7 +518,7 @@ footer .footer_menu .footer_menu_working_hours P {
   background-color: rgb(187, 35, 57);
   transition: 0.3s;
 }
-.hero_section_kebab button:hover {
+.hero_section_kebab a:hover {
   color: rgb(187, 35, 57);
   background-color: rgb(255, 255, 255);
   padding: 8px 32px;
@@ -596,8 +592,7 @@ footer .footer_menu .footer_menu_working_hours P {
   background-color: rgb(255, 255, 255);
 }
 .popular_dishes .popular_dishes_cards .popular_dishes_card:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .popular_dishes .popular_dishes_cards .popular_dishes_card img {
   margin: 0 auto;
@@ -765,11 +760,7 @@ footer .footer_menu .footer_menu_working_hours P {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.regular_menu
-  .ap-tab-container
-  .ap-tab-content
-  .regular_menu_cards
-  .regular_menu_card {
+.regular_menu .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card {
   margin: 15px auto;
   padding: 20px 20px 40px 20px;
   width: 310px;
@@ -778,39 +769,21 @@ footer .footer_menu .footer_menu_working_hours P {
   border: 1px solid rgba(36, 36, 36, 0.1);
   transition: 0.5s;
 }
-.regular_menu
-  .ap-tab-container
-  .ap-tab-content
-  .regular_menu_cards
-  .regular_menu_card:hover {
+.regular_menu .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card:hover {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 @media (max-width: 355px) {
-  .regular_menu
-    .ap-tab-container
-    .ap-tab-content
-    .regular_menu_cards
-    .regular_menu_card {
+  .regular_menu .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card {
     padding: 10px 10px 30px 10px;
     width: 280px;
     border-radius: 14px;
     background-color: 0;
   }
 }
-.regular_menu
-  .ap-tab-container
-  .ap-tab-content
-  .regular_menu_cards
-  .regular_menu_card
-  img {
+.regular_menu .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card img {
   width: 100%;
 }
-.regular_menu
-  .ap-tab-container
-  .ap-tab-content
-  .regular_menu_cards
-  .regular_menu_card
-  h2 {
+.regular_menu .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card h2 {
   padding: 10px 0 0 0;
   text-align: center;
   font-size: 18px;
@@ -818,12 +791,7 @@ footer .footer_menu .footer_menu_working_hours P {
   line-height: 24.51px;
   letter-spacing: 0em;
 }
-.regular_menu
-  .ap-tab-container
-  .ap-tab-content
-  .regular_menu_cards
-  .regular_menu_card
-  h4 {
+.regular_menu .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card h4 {
   padding: 30px 0 0 0;
   color: rgb(187, 35, 57);
   font-size: 24px;
@@ -872,8 +840,7 @@ footer .footer_menu .footer_menu_working_hours P {
   transition: 0.3s;
 }
 .happy_customers .happy_customers_cards .happy_customers_card:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .happy_customers .happy_customers_cards .happy_customers_card h4 {
   font-size: 24px;
@@ -995,9 +962,7 @@ footer .footer_menu .footer_menu_working_hours P {
   transition: 0.5s;
 }
 .gericht_updates .gericht_updates_cards .gericht_updates_card:hover {
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
-    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
-    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 .gericht_updates .gericht_updates_cards .gericht_updates_card img {
   width: 100%;
@@ -1019,19 +984,12 @@ footer .footer_menu .footer_menu_working_hours P {
   line-height: 24px;
   letter-spacing: 0em;
 }
-.gericht_updates
-  .gericht_updates_cards
-  .gericht_updates_card
-  .gericht_updates_card_number {
+.gericht_updates .gericht_updates_cards .gericht_updates_card .gericht_updates_card_number {
   padding: 20px 20px 30px 20px;
   display: flex;
   justify-content: space-between;
 }
-.gericht_updates
-  .gericht_updates_cards
-  .gericht_updates_card
-  .gericht_updates_card_number
-  a {
+.gericht_updates .gericht_updates_cards .gericht_updates_card .gericht_updates_card_number a {
   width: 96px;
   color: rgb(187, 35, 57);
   font-size: 16px;
@@ -1039,11 +997,7 @@ footer .footer_menu .footer_menu_working_hours P {
   line-height: 16px;
   letter-spacing: 0.04em;
 }
-.gericht_updates
-  .gericht_updates_cards
-  .gericht_updates_card
-  .gericht_updates_card_number
-  h6 {
+.gericht_updates .gericht_updates_cards .gericht_updates_card .gericht_updates_card_number h6 {
   width: 79px;
   opacity: 50%;
   font-size: 14px;
@@ -1072,35 +1026,19 @@ footer .footer_menu .footer_menu_working_hours P {
     margin: 0 auto;
   }
 }
-.gericht_updates
-  .gericht_updates_cards_2
-  .gericht_updates_cards
-  .gericht_updates_card {
+.gericht_updates .gericht_updates_cards_2 .gericht_updates_cards .gericht_updates_card {
   border: 1px solid rgb(170, 170, 170);
   border-radius: 14px;
   max-width: 410px;
   transition: 0.5s;
 }
-.gericht_updates
-  .gericht_updates_cards_2
-  .gericht_updates_cards
-  .gericht_updates_card:hover {
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
-    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
-    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+.gericht_updates .gericht_updates_cards_2 .gericht_updates_cards .gericht_updates_card:hover {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
-.gericht_updates
-  .gericht_updates_cards_2
-  .gericht_updates_cards
-  .gericht_updates_card
-  img {
+.gericht_updates .gericht_updates_cards_2 .gericht_updates_cards .gericht_updates_card img {
   width: 100%;
 }
-.gericht_updates
-  .gericht_updates_cards_2
-  .gericht_updates_cards
-  .gericht_updates_card
-  h4 {
+.gericht_updates .gericht_updates_cards_2 .gericht_updates_cards .gericht_updates_card h4 {
   padding: 20px 20px 0 20px;
   max-width: 362px;
   font-size: 24px;
@@ -1108,11 +1046,7 @@ footer .footer_menu .footer_menu_working_hours P {
   line-height: 32px;
   letter-spacing: 0em;
 }
-.gericht_updates
-  .gericht_updates_cards_2
-  .gericht_updates_cards
-  .gericht_updates_card
-  P {
+.gericht_updates .gericht_updates_cards_2 .gericht_updates_cards .gericht_updates_card P {
   color: rgb(170, 170, 170);
   padding: 10px 20px 0 20px;
   max-width: 361px;
@@ -1121,21 +1055,12 @@ footer .footer_menu .footer_menu_working_hours P {
   line-height: 24px;
   letter-spacing: 0em;
 }
-.gericht_updates
-  .gericht_updates_cards_2
-  .gericht_updates_cards
-  .gericht_updates_card
-  .gericht_updates_card_number {
+.gericht_updates .gericht_updates_cards_2 .gericht_updates_cards .gericht_updates_card .gericht_updates_card_number {
   padding: 20px 20px 30px 20px;
   display: flex;
   justify-content: space-between;
 }
-.gericht_updates
-  .gericht_updates_cards_2
-  .gericht_updates_cards
-  .gericht_updates_card
-  .gericht_updates_card_number
-  a {
+.gericht_updates .gericht_updates_cards_2 .gericht_updates_cards .gericht_updates_card .gericht_updates_card_number a {
   width: 96px;
   color: rgb(187, 35, 57);
   font-size: 16px;
@@ -1143,12 +1068,7 @@ footer .footer_menu .footer_menu_working_hours P {
   line-height: 16px;
   letter-spacing: 0.04em;
 }
-.gericht_updates
-  .gericht_updates_cards_2
-  .gericht_updates_cards
-  .gericht_updates_card
-  .gericht_updates_card_number
-  h6 {
+.gericht_updates .gericht_updates_cards_2 .gericht_updates_cards .gericht_updates_card .gericht_updates_card_number h6 {
   width: 79px;
   opacity: 50%;
   font-size: 14px;
@@ -1241,10 +1161,7 @@ footer .footer_menu .footer_menu_working_hours P {
     width: 310px;
   }
 }
-.eaturkish_restaurant_vidio
-  .modal-dialog
-  .modal-content
-  .eaturkish_restaurant_vidio_footer {
+.eaturkish_restaurant_vidio .modal-dialog .modal-content .eaturkish_restaurant_vidio_footer {
   padding: 20px 0 20px 0;
   display: flex;
   justify-content: space-around;
@@ -1252,28 +1169,17 @@ footer .footer_menu .footer_menu_working_hours P {
   gap: 0px;
 }
 @media (max-width: 420px) {
-  .eaturkish_restaurant_vidio
-    .modal-dialog
-    .modal-content
-    .eaturkish_restaurant_vidio_footer {
+  .eaturkish_restaurant_vidio .modal-dialog .modal-content .eaturkish_restaurant_vidio_footer {
     display: flex;
     justify-content: center;
     align-items: 0;
     gap: 0px;
   }
-  .eaturkish_restaurant_vidio
-    .modal-dialog
-    .modal-content
-    .eaturkish_restaurant_vidio_footer
-    img {
+  .eaturkish_restaurant_vidio .modal-dialog .modal-content .eaturkish_restaurant_vidio_footer img {
     display: none;
   }
 }
-.eaturkish_restaurant_vidio
-  .modal-dialog
-  .modal-content
-  .eaturkish_restaurant_vidio_footer
-  button {
+.eaturkish_restaurant_vidio .modal-dialog .modal-content .eaturkish_restaurant_vidio_footer button {
   display: flex;
   height: 3em;
   width: 100px;
@@ -1287,31 +1193,17 @@ footer .footer_menu .footer_menu_working_hours P {
   border: none;
   background: #fff;
 }
-.eaturkish_restaurant_vidio
-  .modal-dialog
-  .modal-content
-  .eaturkish_restaurant_vidio_footer
-  button
-  > svg {
+.eaturkish_restaurant_vidio .modal-dialog .modal-content .eaturkish_restaurant_vidio_footer button > svg {
   margin-right: 5px;
   margin-left: 5px;
   font-size: 20px;
   transition: all 0.4s ease-in;
 }
-.eaturkish_restaurant_vidio
-  .modal-dialog
-  .modal-content
-  .eaturkish_restaurant_vidio_footer
-  button:hover
-  > svg {
+.eaturkish_restaurant_vidio .modal-dialog .modal-content .eaturkish_restaurant_vidio_footer button:hover > svg {
   font-size: 1.2em;
   transform: translateX(-5px);
 }
-.eaturkish_restaurant_vidio
-  .modal-dialog
-  .modal-content
-  .eaturkish_restaurant_vidio_footer
-  button:hover {
+.eaturkish_restaurant_vidio .modal-dialog .modal-content .eaturkish_restaurant_vidio_footer button:hover {
   box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
   transform: translateY(-2px);
 }
@@ -1369,14 +1261,15 @@ footer .footer_menu .footer_menu_working_hours P {
     width: 250px;
   }
 }
-.photo_gallery .photo_gallery_text_cards .photo_gallery_texts button {
+.photo_gallery .photo_gallery_text_cards .photo_gallery_texts a {
   padding: 8px 32px;
   border-radius: 100px;
   border: 2px solid rgb(187, 35, 57);
   margin: 24px 0 0 0;
   transition: 0.5s;
+  color: rgb(187, 35, 57);
 }
-.photo_gallery .photo_gallery_text_cards .photo_gallery_texts button:hover {
+.photo_gallery .photo_gallery_text_cards .photo_gallery_texts a:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(187, 35, 57);
 }
@@ -1407,26 +1300,16 @@ footer .footer_menu .footer_menu_working_hours P {
     width: 320px;
   }
 }
-.photo_gallery
-  .photo_gallery_text_cards
-  .photo_gallery_cards
-  .photo_gallery_card {
+.photo_gallery .photo_gallery_text_cards .photo_gallery_cards .photo_gallery_card {
   width: 301px;
   position: relative;
 }
 @media (max-width: 349px) {
-  .photo_gallery
-    .photo_gallery_text_cards
-    .photo_gallery_cards
-    .photo_gallery_card {
+  .photo_gallery .photo_gallery_text_cards .photo_gallery_cards .photo_gallery_card {
     width: 290px;
   }
 }
-.photo_gallery
-  .photo_gallery_text_cards
-  .photo_gallery_cards
-  .photo_gallery_card
-  .photo_gallery_icon {
+.photo_gallery .photo_gallery_text_cards .photo_gallery_cards .photo_gallery_card .photo_gallery_icon {
   width: 50px;
   position: absolute;
   top: 50%;
@@ -1435,18 +1318,10 @@ footer .footer_menu .footer_menu_working_hours P {
   opacity: 0;
   transition: 0.5s;
 }
-.photo_gallery
-  .photo_gallery_text_cards
-  .photo_gallery_cards
-  .photo_gallery_card:hover
-  .photo_gallery_image {
+.photo_gallery .photo_gallery_text_cards .photo_gallery_cards .photo_gallery_card:hover .photo_gallery_image {
   filter: brightness(0.4);
 }
-.photo_gallery
-  .photo_gallery_text_cards
-  .photo_gallery_cards
-  .photo_gallery_card:hover
-  .photo_gallery_icon {
+.photo_gallery .photo_gallery_text_cards .photo_gallery_cards .photo_gallery_card:hover .photo_gallery_icon {
   opacity: 1;
 }
 .photo_gallery .photo_gallery_text_cards .photo_gallery_cards .owl-dots {
@@ -1644,11 +1519,7 @@ footer .footer_menu .footer_menu_working_hours P {
     height: 110px;
   }
 }
-.contact_us
-  .contact_us_message_cards
-  .mesasenger_cards
-  .mesasenger_card
-  .mesasenger_card_image {
+.contact_us .contact_us_message_cards .mesasenger_cards .mesasenger_card .mesasenger_card_image {
   width: 60px;
   height: 60px;
   border-radius: 100px;
@@ -1676,18 +1547,10 @@ footer .footer_menu .footer_menu_working_hours P {
   transform: scale(1.1);
   background-color: rgb(187, 35, 57);
 }
-.contact_us
-  .contact_us_message_cards
-  .mesasenger_cards
-  .mesasenger_card:hover
-  h4 {
+.contact_us .contact_us_message_cards .mesasenger_cards .mesasenger_card:hover h4 {
   color: rgb(255, 255, 255);
 }
-.contact_us
-  .contact_us_message_cards
-  .mesasenger_cards
-  .mesasenger_card:hover
-  a {
+.contact_us .contact_us_message_cards .mesasenger_cards .mesasenger_card:hover a {
   color: rgb(255, 255, 255);
 }
 .contact_us .contact_us_message_cards .send_messege {
@@ -1970,30 +1833,17 @@ footer .footer_menu .footer_menu_working_hours P {
   color: rgb(187, 35, 57);
   background-color: rgb(255, 255, 255);
 }
-.our_regular_menu_pack
-  .ap-tab-menus-card
-  .ap-tab-container
-  .ap-tab-content
-  .regular_menu_cards {
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards {
   display: grid;
   gap: 36px;
   grid-template-columns: repeat(2, 1fr);
 }
 @media (max-width: 1320px) {
-  .our_regular_menu_pack
-    .ap-tab-menus-card
-    .ap-tab-container
-    .ap-tab-content
-    .regular_menu_cards {
+  .our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.our_regular_menu_pack
-  .ap-tab-menus-card
-  .ap-tab-container
-  .ap-tab-content
-  .regular_menu_cards
-  .regular_menu_card {
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card {
   margin: 15px auto;
   max-width: 400px;
   border-radius: 14px;
@@ -2001,43 +1851,21 @@ footer .footer_menu .footer_menu_working_hours P {
   border: 1px solid rgba(36, 36, 36, 0.1);
   transition: 0.5s;
 }
-.our_regular_menu_pack
-  .ap-tab-menus-card
-  .ap-tab-container
-  .ap-tab-content
-  .regular_menu_cards
-  .regular_menu_card:hover {
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card:hover {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 @media (max-width: 355px) {
-  .our_regular_menu_pack
-    .ap-tab-menus-card
-    .ap-tab-container
-    .ap-tab-content
-    .regular_menu_cards
-    .regular_menu_card {
+  .our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card {
     padding: 10px 10px 30px 10px;
     width: 280px;
     border-radius: 14px;
     background-color: 0;
   }
 }
-.our_regular_menu_pack
-  .ap-tab-menus-card
-  .ap-tab-container
-  .ap-tab-content
-  .regular_menu_cards
-  .regular_menu_card
-  img {
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card img {
   width: 100%;
 }
-.our_regular_menu_pack
-  .ap-tab-menus-card
-  .ap-tab-container
-  .ap-tab-content
-  .regular_menu_cards
-  .regular_menu_card
-  h2 {
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card h2 {
   max-width: 340px;
   padding: 10px 0 0 0;
   text-align: center;
@@ -2046,13 +1874,7 @@ footer .footer_menu .footer_menu_working_hours P {
   line-height: 30px;
   letter-spacing: 0em;
 }
-.our_regular_menu_pack
-  .ap-tab-menus-card
-  .ap-tab-container
-  .ap-tab-content
-  .regular_menu_cards
-  .regular_menu_card
-  h4 {
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card h4 {
   padding: 30px 0 0 0;
   color: rgb(187, 35, 57);
   font-size: 24px;

@@ -34,7 +34,7 @@
       color: var.$bg-white;
       opacity: 70%;
     }
-    button {
+    a {
       @include btns.btn(8px 32px, 100, 2px solid var.$bg-white);
       margin: 30px 0 0 0;
       color: var.$bg-white;
@@ -599,10 +599,11 @@
           width: 250px;
         }
       }
-      button {
+      a {
         @include btns.btn(8px 32px, 100, 2px solid var.$bg-red);
         margin: 24px 0 0 0;
         transition: 0.5s;
+        color: var.$bg-red;
         &:hover {
           color: var.$bg-white;
           background-color: var.$bg-red;
