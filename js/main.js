@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ loading @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//
 const loading = document.getElementById("loading");
 
-const loadingDuration = 3000; // 1.8s
+const loadingDuration = 1000; // 1.8s
 
 setTimeout(() => {
   loading.classList.add("loading-none");
